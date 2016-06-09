@@ -2,6 +2,11 @@
   position: relative;
   height: 100%;
   width: 100%;
+  color: #cfc0ca;
+  background: -moz-linear-gradient(top, rgba(91,57,75,0.58) 0%, rgba(91,57,75,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(91,57,75,0.58) 0%,rgba(91,57,75,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(91,57,75,0.58) 0%,rgba(91,57,75,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#945b394b', endColorstr='#5b394b',GradientType=0 ); /* IE6-9 */
   /*font-family: 'Campton-ExtraLight';src: url('fonts/314870_0_0.eot');src: url('fonts/314870_0_0.eot?#iefix') format('embedded-opentype'),url('fonts/314870_0_0.woff2') format('woff2'),url('fonts/314870_0_0.woff') format('woff'),url('fonts/314870_0_0.ttf') format('truetype');*/
 }
 .about-us {
@@ -9,6 +14,9 @@
 }
 .welcome{
   font-weight: 700;
+}
+a {
+  color: #cfc0ca;
 }
 .em-inc {
   font-size: 30px;
@@ -23,7 +31,7 @@
   position: absolute;
   text-align: center;
   width: 840px;
-  height: 378px;
+  height: 444px;
   left: 50%;
   margin-left: -420px;
   top: 50%;
@@ -31,40 +39,43 @@
 }
 #logo {
   opacity: 0;
+  margin-top: 20px;
 }
 #em {
   position: absolute;
   width: 100%;
-  font-weight: 900;
+  font-weight: 600;
   font-size: 34px;
   opacity: 0;
   text-align: center;
-  top: 50%;
-  left: 50%;
-  margin-left: -420px;
-  margin-top: 38.5px;
+  top: 222.5px;
+  /*left: 50%;*/
+  /*margin-left: -420px;*/
+  /*margin-top: 38.5px;*/
 
 }
 #motivated {
   position: absolute;
   top: 50%;
   width: 100%;
-  left: 50%;
+  /*left: 50%;*/
   font-size: 34px;
   opacity: 0;
   text-align: center;
-  margin-left: -420px;
+  bottom: 0px;
+  /*margin-left: -420px;*/
   margin-top: 150px;
 }
 #dd{
   position: absolute;
   width: 100%;
-  font-weight: 600;
+  /*font-weight: 600;*/
   opacity: 0;
-  top: 50%;
-  left: 50%;
-  margin-left: -420px;
-  margin-top: 88.5px;
+  /*top: 50%;*/
+  /*left: 50%;*/
+  /*margin-left: -420px;*/
+  margin-top: 70px;
+
   text-align: center;
 }
 .top-gradient {
