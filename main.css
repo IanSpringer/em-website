@@ -12,20 +12,28 @@ body{
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#945b394b', endColorstr='#5b394b',GradientType=0 );
 }
 .about-us {
-  position: relative;
+  position: absolute;
   text-align: center;
-  margin-top: 304px;
+  height: 100%;
+  width: 100%;
 }
 .about {
-  margin-top: 115px;
+  /*margin-top: -30.5px;*/
   width: 100%;
   position: absolute;
+  font-size: 17px;
   top: 50%;
   text-align: center;
+  line-height: 1.68em;
+  font-family: 'Source Sans Pro';
   color: #e0c9d8
+
 }
 .welcome{
-  font-weight: 700;
+  margin-top: 304px;
+  /*font-weight: 700;*/
+  font-family: 'Campton-Medium';
+  font-size: 21px;
   color: #f6b544
 }
 a {
@@ -35,7 +43,7 @@ a {
   width: 100%;
   top: 50%;
   margin-top: 16px;
-  font-size: 30px;
+  font-size: 37px;
   font-weight: 700;
   font-family: 'Campton-Medium';
   color: #e5d7e0;
@@ -67,7 +75,7 @@ a {
   color: #e5d7e0;
   position: absolute;
   width: 100%;
-  font-size: 34px;
+  font-size: 35.78px;
   opacity: 0;
   text-align: center;
   top: 50%;
@@ -77,6 +85,7 @@ a {
 #motivated {
   color: #cfc0ca;
   position: absolute;
+  font-family: 'Campton-ExtraLight';
   top: 50%;
   width: 100%;
   font-size: 38px;
@@ -91,7 +100,7 @@ a {
 #dd{
   position: absolute;
   width: 100%;
-  font-size: 26px;
+  font-size: 23.855px;
   line-height: 1.5em;
   opacity: 0;
   margin-top: 270px;
@@ -126,6 +135,7 @@ a {
 }
 .menu {
   opacity: 0;
+  margin: 0 auto;
 }
 .menu-item {
   margin: 0px 75px;
@@ -145,6 +155,13 @@ a {
     display: inline;
   }
 }
+@media screen and (max-height: 822px){
+  .about {
+    margin-top: 36px;
+    position: absolute;
+  }
+}
+
 
 
 

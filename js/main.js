@@ -1,22 +1,31 @@
 console.log("hello")
 
 $( document ).ready(function(){
+  $(window).bind('scroll', function () {
+    if ($(window).scrollTop() > 1100) {
+        $('.main-menu').css('position', 'fixed').css('top', '0px');
+        console.log('whoa')
+    } else {
+        console.log('hmm')
+    }
+    $('main-menu').css('position', 'absolute')
+});
   console.log('ready')
   $('#logo').transition({y: 100}, {duration: 1, complete: function(){
       $(this).transition({y: 0, opacity: 1}, 700)
     }})
 
   $('#em').transition({y: 100}, {duration: 1, complete: function(){
-      $(this).transition({y: 0, opacity: 1}, 750)
-    }})
-  $('#dd').transition({y: 100}, {duration: 1, complete: function(){
       $(this).transition({y: 0, opacity: 1}, 800)
     }})
+  $('#dd').transition({y: 100}, {duration: 1, complete: function(){
+      $(this).transition({y: 0, opacity: 1}, 900)
+    }})
    $('#motivated').transition({y: 100}, {duration: 1, complete: function(){
-      $(this).transition({y: 0, opacity: 1}, 850)
+      $(this).transition({y: 0, opacity: 1}, 1000)
     }})
    $('.menu').transition({y: 100}, {duration: 1, complete: function(){
-      $(this).transition({y: 0, opacity: 1}, 900)
+      $(this).transition({y: 0, opacity: 1}, 1100)
     }})
    $('.menu-item a').on('mouseenter', function(){
        console.log('mouseover')
@@ -28,9 +37,11 @@ $( document ).ready(function(){
    })
    $('#about-button').on('click', function(){
       console.log('about clicked')
-      $('body').transition({y: -1500}, 800, 'ease')
-   })
+      $('html,body').animate({scrollTop: $('.about-us').offset().top
+    }, 500)
+  })
 })
+
 
 
 
